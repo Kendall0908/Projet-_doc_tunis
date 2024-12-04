@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Doc à Tunis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <img src="assets/logo.png" alt="Logo Doc à Tunis" class="logo">
+            <ul class="nav-links">
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="planning.html">Planning</a></li>
+                <li><a href="index.html">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <div class="dashboard-container">
+            <h1 class="dashboard-title">Dashboard</h1>
+            <p class="welcome-message">Bienvenue, Utilisateur. Que souhaitez-vous gérer ?</p>
+
+            <!-- Section des fonctionnalités -->
+            <div class="dashboard-grid">
+                <!-- Fonctionnalités pour le responsable des inspections -->
+                <div class="dashboard-card">
+                    <h2>Responsable des Inspections</h2>
+                    <p>Gérez les films participant au festival et les informations des réalisateurs et producteurs.</p>
+                    <a href="films.html" class="action-button">Gérer les Films</a>
+                </div>
+
+                <!-- Fonctionnalités pour le responsable de la production -->
+                <div class="dashboard-card">
+                    <h2>Responsable de la Production</h2>
+                    <p>Établissez et publiez le planning des projections des films retenus.</p>
+                    <a href="etablir-planning.html" class="action-button">Établir le Planning</a>
+                </div>
+
+                <!-- Fonctionnalités pour les membres du jury -->
+                <div class="dashboard-card">
+                    <h2>Membres du Jury</h2>
+                    <p>Gérez les membres du jury et saisissez leurs notes via le président.</p>
+                    <a href="jury.html" class="action-button">Gérer les Membres du Jury</a>
+                </div>
+
+                <!-- Fonctionnalités pour l'administrateur -->
+                <div class="dashboard-card">
+                    <h2>Administration</h2>
+                    <p>Gérez les rôles et les utilisateurs de l'application.</p>
+                    <a href="roles.html" class="action-button">Gérer les Rôles et Utilisateurs</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 <span class="highlight">Doc à Tunis</span>. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

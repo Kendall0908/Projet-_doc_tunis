@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Jurys - Doc à Tunis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jury.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <nav class="navbar">
+            <img src="assets/logo.png" alt="Logo Doc à Tunis" class="logo">
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="jury.html" class="active">Gestion des Jurys</a></li>
+                <li><a href="planning.html">Planning</a></li>
+                <li><a href="logout.html">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <div class="jury-container">
+            <h1>Gestion des Jurys</h1>
+            <form id="juryForm">
+                <fieldset>
+                    <legend>Enregistrer un membre du jury</legend>
+                    <label for="codeJury">Code :</label>
+                    <input type="text" id="codeJury" name="codeJury" required>
+
+                    <label for="nomJury">Nom :</label>
+                    <input type="text" id="nomJury" name="nomJury" required>
+
+                    <label for="prenomJury">Prénom :</label>
+                    <input type="text" id="prenomJury" name="prenomJury" required>
+
+                    <label for="dateNaissanceJury">Date de Naissance :</label>
+                    <input type="date" id="dateNaissanceJury" name="dateNaissanceJury" required>
+                </fieldset>
+
+                <button type="submit" class="submit-button">Enregistrer</button>
+            </form>
+
+            <hr>
+
+            <h2>Attribuer une Note</h2>
+            <form id="noteForm">
+                <label for="filmSelection">Film :</label>
+                <select id="filmSelection" name="filmSelection" required>
+                    <option value="Film 1">Film 1</option>
+                    <option value="Film 2">Film 2</option>
+                    <option value="Film 3">Film 3</option>
+                    <option value="Film 4">Film 4</option>
+                    <option value="Film 5">Film 5</option>
+                    <option value="Film 6">Film 6</option>
+                </select>
+
+                <label for="jurySelection">Membre du Jury :</label>
+                <select id="jurySelection" name="jurySelection" required>
+                    <option value="Jury 1">Jury 1</option>
+                    <option value="Jury 2">Jury 2</option>
+                    <option value="Jury 3">Jury 3</option>
+                    <option value="Jury 4">Jury 4</option>
+                </select>
+
+                <label for="note">Note :</label>
+                <input type="number" id="note" name="note" min="1" max="10" required>
+
+                <button type="submit" class="submit-button">Attribuer la Note</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 <span class="highlight">Doc à Tunis</span>. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/jury.js"></script>
+</body>
+</html>

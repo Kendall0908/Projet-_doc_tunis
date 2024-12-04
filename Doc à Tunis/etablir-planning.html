@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Établir le Planning</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/etablir-planning.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="assets/logo.png" alt="Logo Doc à Tunis" class="logo">
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="planning.html">Voir le Planning</a></li>
+                <li><a href="etablir-planning.html" class="active">Gestion des plannings</a></li>
+                <li><a href="index.html">Déconnexion</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="planning-form">
+            <h1>Établir le Planning des Projections</h1>
+            <form id="planningForm">
+                <label for="title">Titre du Film:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="date">Date de la Projection:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Heure de la Projection:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="location">Lieu:</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description"></textarea>
+
+                <button type="submit">Ajouter au Planning</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 <span class="highlight">Doc à Tunis</span>. Tous droits réservés.</p>
+    </footer>
+    <script src="js/etablir-planning.js"></script>
+</body>
+</html>

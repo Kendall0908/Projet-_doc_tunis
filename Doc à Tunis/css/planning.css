@@ -1,0 +1,138 @@
+/* Variables globales */
+:root {
+    --black: #0d0d0d;
+    --red: #e50914;
+    --white: #f4f4f4;
+    --gold: #f5c518;
+    --dark-gray: #2e2e2e;
+    --light-gray: #cccccc;
+}
+
+/* Corps de la page */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: var(--red);
+    border-bottom: 2px solid var(--red);
+}
+
+.logo {
+    height: 30px;
+}
+
+/* Contenu principal */
+main {
+    flex: 1;
+    padding: 20px 40px;
+}
+
+/* Planning Section */
+.planning-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--black);
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.planning-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.planning-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.planning-card {
+    background-color: var(--dark-gray);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.planning-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.planning-card h3 {
+    color: var(--red);
+    margin-bottom: 10px;
+}
+
+.planning-card p {
+    font-size: 0.9rem;
+    color: var(--light-gray);
+    margin: 5px 0;
+}
+
+/* Bouton */
+.view-details {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--red);
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.view-details:hover {
+    background-color: var(--gold);
+}
+
+/* Footer */
+footer {
+    background-color: var(--black);
+    padding: 20px;
+    text-align: center;
+    color: var(--white);
+    font-size: 0.9rem;
+}
+
+footer .highlight {
+    color: var(--red);
+}

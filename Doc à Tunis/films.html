@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Films - Doc à Tunis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/films.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <nav class="navbar">
+            <img src="assets/logo.png" alt="Logo Doc à Tunis" class="logo">
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="films.html" class="active">Gestion des Films</a></li>
+                <li><a href="planning.html">Planning</a></li>
+                <li><a href="index.html">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <div class="form-container">
+            <h1>Enregistrer un Film</h1>
+            <form id="filmForm">
+                <fieldset>
+                    <legend>Informations du Film</legend>
+                    <label for="codeFilm">Code :</label>
+                    <input type="text" id="codeFilm" name="codeFilm" required>
+
+                    <label for="titreFilm">Titre :</label>
+                    <input type="text" id="titreFilm" name="titreFilm" required>
+
+                    <label for="dateFilm">Date :</label>
+                    <input type="date" id="dateFilm" name="dateFilm" required>
+
+                    <label for="sujetFilm">Sujet :</label>
+                    <input type="text" id="sujetFilm" name="sujetFilm" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informations du Réalisateur</legend>
+                    <label for="codeRealisateur">Code :</label>
+                    <input type="text" id="codeRealisateur" name="codeRealisateur" required>
+
+                    <label for="nomRealisateur">Nom :</label>
+                    <input type="text" id="nomRealisateur" name="nomRealisateur" required>
+
+                    <label for="prenomRealisateur">Prénom :</label>
+                    <input type="text" id="prenomRealisateur" name="prenomRealisateur" required>
+
+                    <label for="dateNaissanceRealisateur">Date de Naissance :</label>
+                    <input type="date" id="dateNaissanceRealisateur" name="dateNaissanceRealisateur" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informations du Producteur</legend>
+                    <label for="codeProducteur">Code :</label>
+                    <input type="text" id="codeProducteur" name="codeProducteur" required>
+
+                    <label for="nomProducteur">Nom :</label>
+                    <input type="text" id="nomProducteur" name="nomProducteur" required>
+
+                    <label for="prenomProducteur">Prénom :</label>
+                    <input type="text" id="prenomProducteur" name="prenomProducteur" required>
+
+                    <label for="dateNaissanceProducteur">Date de Naissance :</label>
+                    <input type="date" id="dateNaissanceProducteur" name="dateNaissanceProducteur" required>
+                </fieldset>
+
+                <button type="submit" class="submit-button">Enregistrer</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 <span class="highlight">Doc à Tunis</span>. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/films.js"></script>
+</body>
+</html>

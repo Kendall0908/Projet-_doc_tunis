@@ -1,0 +1,20 @@
+/projet-doc-tunis
+├── /css
+│   ├── style.css
+│   └── dashboard.css
+|   |__login.css
+├── /js
+│   ├── planning.js
+│   └── dashboard.js
+|   |__planning.js
+├── /assets
+│   ├── logo.png
+│   ├── background.jpg
+│   └── films/
+├── index.html
+├── dashboard.html
+├── login.html
+├── register.html
+├── film-details.html
+├── planning.html
+└── jury-evaluation.html

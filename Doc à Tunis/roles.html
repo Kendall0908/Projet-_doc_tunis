@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Rôles - Doc à Tunis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/roles.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <nav class="navbar">
+            <img src="assets/logo.png" alt="Logo Doc à Tunis" class="logo">
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="roles.html" class="active">Gestion des Rôles</a></li>
+                <li><a href="planning.html">Planning</a></li>
+                <li><a href="index.html">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <div class="roles-container">
+            <h1>Gestion des Rôles</h1>
+
+            <!-- Formulaire pour ajouter un rôle -->
+            <form id="roleForm">
+                <fieldset>
+                    <legend>Ajouter un Rôle</legend>
+                    <label for="roleName">Nom du Rôle :</label>
+                    <input type="text" id="roleName" name="roleName" required>
+                    <button type="submit" class="submit-button">Ajouter le Rôle</button>
+                </fieldset>
+            </form>
+
+            <hr>
+
+            <!-- Liste des rôles existants -->
+            <h2>Liste des Rôles</h2>
+            <ul id="roleList" class="role-list">
+                <!-- Dynamically populated -->
+                <li>
+                    <span>Responsable des inspections</span>
+                    <button class="edit-button">Modifier</button>
+                    <button class="delete-button">Supprimer</button>
+                </li>
+                <li>
+                    <span>Responsable de la production</span>
+                    <button class="edit-button">Modifier</button>
+                    <button class="delete-button">Supprimer</button>
+                </li>
+            </ul>
+
+            <hr>
+
+            <!-- Affecter un rôle à un utilisateur -->
+            <h2>Affecter un Rôle à un Utilisateur</h2>
+            <form id="assignRoleForm">
+                <fieldset>
+                    <legend>Affecter un Rôle</legend>
+                    <label for="userSelect">Utilisateur :</label>
+                    <select id="userSelect" name="userSelect" required>
+                        <!-- Rempli dynamiquement -->
+                        <option value="">-- Sélectionner un utilisateur --</option>
+                        <option value="1">Utilisateur 1</option>
+                        <option value="2">Utilisateur 2</option>
+                    </select>
+
+                    <label for="roleSelect">Rôle :</label>
+                    <select id="roleSelect" name="roleSelect" required>
+                        <!-- Rempli dynamiquement -->
+                        <option value="">-- Sélectionner un rôle --</option>
+                        <option value="inspections">Responsable des inspections</option>
+                        <option value="production">Responsable de la production</option>
+                    </select>
+
+                    <button type="submit" class="assign-button">Affecter</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 <span class="highlight">Doc à Tunis</span>. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/roles.js"></script>
+</body>
+</html>

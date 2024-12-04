@@ -1,0 +1,105 @@
+/* Couleurs inspirées du cinéma */
+:root {
+    --black: #0d0d0d;
+    --red: #e50914;
+    --white: #f4f4f4;
+    --gold: #f5c518;
+    --dark-gray: #2e2e2e;
+    --light-gray: #cccccc;
+}
+
+/* Corps de page */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: var(--red);
+    border-bottom: 2px solid var(--red);
+}
+
+.logo {
+    height: 30px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('../assets/background.avif') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hero-title {
+    font-size: 3rem;
+    color: var(--gold);
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: var(--light-gray);
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--red);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--gold);
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: var(--black);
+    padding: 20px;
+    text-align: center;
+    color: var(--white);
+    font-size: 0.9rem;
+}
+
+footer .highlight {
+    color: var(--red);
+}
